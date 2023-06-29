@@ -1,14 +1,14 @@
 #
 # Build stage
 #
-FROM maven:4.0.0-jdk-17 AS build
+FROM maven:3.8.2-jdk-11 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
 #
 # Package stage
 #
-FROM openjdk:17-alpine3.14
+FROM openjdk:11-jdk-slim
 COPY --from=build /target/spring-boot-2-rest-api.jar spring_boot_2_rest_api.jar
 # ENV PORT=8080
 EXPOSE 8080
