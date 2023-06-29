@@ -1,5 +1,5 @@
 
 FROM eclipse-temurin:17-jdk-alpine
-MAINTAINER yugeshae@gmail.com
-COPY target/Spring_Boot_2_Rest_API-0.0.1-SNAPSHOT.jar Spring_Boot_2_Rest_API-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/Spring_Boot_2_Rest_API-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080
+ADD target/spring-boot-2-rest-api.jar spring-boot-2-rest-api.jar
+ENTRYPOINT ["java","-jar","/spring-boot-2-rest-api.jar"]
