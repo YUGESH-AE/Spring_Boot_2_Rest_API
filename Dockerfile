@@ -8,7 +8,7 @@ RUN mvn clean install package
 #
 # Package stage
 #
-FROM amazoncorretto:3.8.2-jdk-17 AS package1
+FROM openjdk:17-ea-3-jdk-slim
 COPY --from=build /target/spring-boot-2-rest-api.jar spring_boot_2_rest_api.jar
 # ENV PORT=8080
 EXPOSE 8080
