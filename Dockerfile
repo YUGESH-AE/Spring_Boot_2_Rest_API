@@ -9,7 +9,7 @@ RUN mvn clean install
 #
 # Package stage
 #
-FROM adoptopenjdk:17-jdk-hotspot AS Package
+FROM openjdk:17-alpine AS Package
 WORKDIR /app
 COPY --from=build /target/spring-boot-2-rest-api.jar spring_boot_2_rest_api.jar
 # ENV PORT=8080
