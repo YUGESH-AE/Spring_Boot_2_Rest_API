@@ -14,7 +14,9 @@
     <name>Spring_Boot_2_Rest_API</name>
     <description>Spring_Boot_2_Rest_API</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
