@@ -8,5 +8,10 @@
             <id>packagecloud.snapshots</id>
             <password>06422f27257c0a07b01944e9ef9836aafda87d28c99b84b8</password>
         </server>
+        <server>
+            <id>github</id>
+            <username>YUGESH-AE</username>
+            <password>Yugeshae@2099</password>
+        </server>
     </servers>
 </settings>
