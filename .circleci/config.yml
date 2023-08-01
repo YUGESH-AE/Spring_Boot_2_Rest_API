@@ -28,9 +28,10 @@ jobs:
       - run:
           name: Test
           command: mvn test
-
+      - run: git config user.email "yugeshae@gmail.com"
+      - run: git config user.name "via circleci build"
       - run:
-          name: Release
+          name: Release And Deploy
           command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 
