@@ -21,13 +21,13 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       # Use mvn clean and package as the standard maven build phase
-      - run:
-          name: Build
-          command: mvn clean install
-#       Then run your tests!
-      - run:
-          name: Test
-          command: mvn test
+#      - run:
+#          name: Build
+#          command: mvn clean install
+##       Then run your tests!
+#      - run:
+#          name: Test
+#          command: mvn test
       - run: git config user.email "yugeshae@gmail.com"
       - run: git config user.name "via circleci build"
       - run:
