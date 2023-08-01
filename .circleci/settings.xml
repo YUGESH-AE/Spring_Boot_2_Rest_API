@@ -2,16 +2,16 @@
     <servers>
         <server>
             <id>packagecloud.releases</id>
-            <password>${env.PCLOUD}</password>
+            <password>${env.RELEASE}</password>
         </server>
         <server>
             <id>packagecloud.snapshots</id>
-            <password>${env.PCLOUD}</password>
+            <password>${env.SNAPSHORT}</password>
         </server>
         <server>
             <id>github</id>
             <username>YUGESH-AE</username>
-            <password>${env.PASSWORD}</password>
+            <password>${env.GIT_PASS}</password>
         </server>
     </servers>
 </settings>
