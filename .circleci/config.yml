@@ -23,19 +23,16 @@ jobs:
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
-          command: mvn deploy -s .circleci/settings.xml
-      # Then run your tests!
-#      - run:
-#          name: Test
-#          command: mvn test
-#
-#      - run:
-#          name: Release
-#          command: mvn clean release:prepare -s .circleci/settings.xml
-#
-#      - run:
-#          name: Deploy
-#          command: mvn clean release:perform -s .circleci/settings.xml
+          command: mvn clean install
+#       Then run your tests!
+      - run:
+          name: Test
+          command: mvn test
+
+      - run:
+          name: Release
+          command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
