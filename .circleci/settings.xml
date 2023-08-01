@@ -11,7 +11,7 @@
         <server>
             <id>github</id>
             <username>YUGESH-AE</username>
-            <password>PASSWORD</password>
+            <password>${env.PASSWORD}</password>
         </server>
     </servers>
 </settings>
