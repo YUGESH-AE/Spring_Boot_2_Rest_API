@@ -42,7 +42,7 @@ jobs:
           command: mvn --batch-mode release:prepare -s settings.xml
       - run:
           name: Deploy
-          command: mvn release:perform -s settings.xml
+          command: mvn --batch-mode release:perform -s settings.xml
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
