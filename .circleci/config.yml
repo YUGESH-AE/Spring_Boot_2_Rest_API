@@ -28,12 +28,21 @@ jobs:
 #      - run:
 #          name: Test
 #          command: mvn test
-      - run: git config user.email "yugeshae@gmail.com"
-      - run: git config user.name "via circleci build"
       - run:
-          name: Release And Deploy
-          command: mvn --batch-mode release:clean release:prepare release:perform -s .circleci/settings.xml
-
+          name: Github Email
+          command: git config user.email "yugeshae@gmail.com"
+      - run:
+          name: Github Username
+          command: git config user.name "via circleci build"
+      - run:
+          name: Clean
+          command: mvn clean
+      - run:
+          name: Release
+          command: mvn --batch-mode release:prepare -s settings.xml
+      - run:
+          name: Deploy
+          command: mvn relese:perform -s settings.xml
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
