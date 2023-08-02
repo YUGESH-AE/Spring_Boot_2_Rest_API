@@ -39,10 +39,10 @@ jobs:
           command: mvn clean
       - run:
           name: Release
-          command: mvn --batch-mode release:prepare -s settings.xml
+          command: mvn --batch-mode release:prepare -s .circleci/settings.xml
       - run:
           name: Deploy
-          command: mvn --batch-mode release:perform -s settings.xml
+          command: mvn --batch-mode release:perform -s .circleci/settings.xml
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
