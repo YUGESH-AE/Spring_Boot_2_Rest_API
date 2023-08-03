@@ -73,7 +73,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</developerConnection>
-        <url>https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API</url>
+        <url>git@github.com:YUGESH-AE/Spring_Boot_2_Rest_API.git</url>
       <tag>MY FIRST SCM</tag>
   </scm>
 
