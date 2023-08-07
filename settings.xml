@@ -5,16 +5,16 @@
     <servers>
         <server>
             <id>packagecloud.releases</id>
-            <password>06422f27257c0a07b01944e9ef9836aafda87d28c99b84b8</password>
+            <password>${env.RELEASE}</password>
         </server>
         <server>
             <id>packagecloud.snapshots</id>
-            <password>06422f27257c0a07b01944e9ef9836aafda87d28c99b84b8</password>
+            <password>${env.SNAPSHORT}</password>
         </server>
         <server>
             <id>github</id>
             <username>yugeshae@gmail.com</username>
-            <password>${env.githubactions}</password>
+            <password>${env.GIT_PASS}</password>
         </server>
     </servers>
 </settings>
