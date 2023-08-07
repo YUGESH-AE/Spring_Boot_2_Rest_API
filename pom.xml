@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>Spring_Boot_2_Rest_API</artifactId>
-    <version>0.0.2-SNAPSHORT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Spring_Boot_2_Rest_API</name>
     <description>Spring_Boot_2_Rest_API</description>
     <properties>
