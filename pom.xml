@@ -71,8 +71,8 @@
 <!--        </dependency>-->
     </dependencies>
     <scm>
-        <developerConnection>scm:git:https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</developerConnection>
-        <connection>scm:git:https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</connection>
+        <developerConnection>scm:git:https://$(env.GIT_PASS)@github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</developerConnection>
+        <connection>scm:git:https://$(env.GIT_PASS)@github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</connection>
         <url>https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</url>
       <tag>Spring_Boot_2_Rest_API-0.0.1</tag>
   </scm>
