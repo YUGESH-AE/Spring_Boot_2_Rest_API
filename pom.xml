@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>Spring_Boot_2_Rest_API</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHORT</version>
     <name>Spring_Boot_2_Rest_API</name>
     <description>Spring_Boot_2_Rest_API</description>
     <properties>
@@ -72,6 +72,7 @@
     </dependencies>
     <scm>
         <developerConnection>scm:git:https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</developerConnection>
+        <connection>scm:git:https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</connection>
         <url>https://github.com/YUGESH-AE/Spring_Boot_2_Rest_API.git</url>
       <tag>Spring_Boot_2_Rest_API-0.0.1</tag>
   </scm>
