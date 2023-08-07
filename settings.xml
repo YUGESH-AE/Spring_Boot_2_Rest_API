@@ -13,8 +13,8 @@
         </server>
         <server>
             <id>github</id>
-            <username>YUGESH-AE</username>
-            <password>Yugeshae@2099</password>
+            <username>yugeshae@gmail.com</username>
+            <password>${env.githubactions}</password>
         </server>
     </servers>
 </settings>
