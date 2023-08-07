@@ -30,6 +30,12 @@ jobs:
 #          name: Test
 #          command: mvn test
       - run:
+          name: git email
+          command: git config --global user.email "yugeshae@gmail.com"
+      - run:
+          name: git username
+          command: git config --global user.name "YUGESH-AE"
+      - run:
           name: release prepare
           command: mvn clean --batch-mode clean release:prepare  -s settings.xml
       - run:
