@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>Spring_Boot_2_Rest_API</artifactId>
-    <version>0.0.1-SNAPSHORT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Spring_Boot_2_Rest_API</name>
     <description>Spring_Boot_2_Rest_API</description>
     <properties>
@@ -89,7 +89,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
+                <version>3.0.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
